@@ -1,0 +1,229 @@
+body, input, p, h1, h2, h3{
+	font-family: 'Ubuntu', sans-serif;
+	padding: 0;
+	margin: 0;
+	line-height: 1.6em;
+	overflow-x: hidden; 
+}
+span{
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.6em;
+}
+
+button{
+	font-family: 'Montserrat', black;
+}
+header{
+	background: rgba(76,188,252,1);
+	background: -moz-linear-gradient(-45deg, rgba(76,188,252,1) 0%, rgba(76,188,252,1) 12%, rgba(57,146,220,1) 75%, rgba(57,146,220,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(76,188,252,1)), color-stop(12%, rgba(76,188,252,1)), color-stop(75%, rgba(57,146,220,1)), color-stop(100%, rgba(57,146,220,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(76,188,252,1) 0%, rgba(76,188,252,1) 12%, rgba(57,146,220,1) 75%, rgba(57,146,220,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(76,188,252,1) 0%, rgba(76,188,252,1) 12%, rgba(57,146,220,1) 75%, rgba(57,146,220,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(76,188,252,1) 0%, rgba(76,188,252,1) 12%, rgba(57,146,220,1) 75%, rgba(57,146,220,1) 100%);
+	background: linear-gradient(135deg, rgba(76,188,252,1) 0%, rgba(76,188,252,1) 12%, rgba(57,146,220,1) 75%, rgba(57,146,220,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4cbcfc', endColorstr='#3992dc', GradientType=1 );
+	padding-top: 60px;
+	color: white;
+}
+.wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+.container{
+	width: 1171px;
+	margin: 0 auto;
+}
+.offer{
+	margin-top: 140px;
+	width: 585px;
+	padding-bottom: 170px;
+}
+.title{
+	font-size: 36px;
+	padding-bottom: 35px;
+}
+.title span {
+	font-size: 59px;
+	}
+.intro{
+	font-size: 16px;
+	width: 400px;
+	display:block;
+}
+.travel{
+	height: 580px;
+	width: 580px;
+	margin-top: 50px;
+}
+.btn{
+	font-size: 15px;
+	background-color: #ffd429;
+	font-family: 'Montserrat', sans-serif;
+	width: 222px;
+	display: block;
+	padding: 20px 0;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	margin-top: 45px;
+	transition: all 0.5s ease;
+}
+.btn:hover{
+	background-color: #ebc326;
+}
+.future{
+	padding-top: 65px;
+	padding-bottom: 150px;
+}
+.section-title{
+	text-align: center;
+	font-size: 30px;
+}
+.section-block{
+	margin: 0 auto;
+	text-align: center;
+}
+.wrapper-2{
+	justify-content: space-between;
+	display: flex;
+	padding-top: 55px;
+}
+.section-block{
+	display:block;
+	margin:auto;
+	text-align: center;
+}
+.section-block p{
+	width: 320px;
+}
+.tickets{
+	padding-top: 65px;
+	padding-bottom: 105px;
+	background-color: #ecf3f8;
+}
+.tickets h2{
+	text-align: center;
+}
+.form{
+	padding-top: 35px;
+	text-align: center;
+}
+.input{
+	display: block;
+	margin: 0 auto;
+	width: 350px;
+	height: 40px;
+	margin-bottom: 15px;
+	padding-left: 15px;
+
+}
+.form button{
+	width: 370px;
+	display: block;
+	margin: 0 auto;
+
+}
+footer{
+	padding-top:60px;
+	padding-bottom: 60px;
+	background-color: #164d7a;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+}
+.red{
+	color:red;
+}
+.pic{
+	height: 500px;
+}
+#more{
+	display: none;
+}
+
+/* responsive */
+
+/* 992 - 1200 */
+@media screen and (max-width: 1200px){
+	.container{
+		width: 960px;
+	}
+}
+
+/* 768 - 992 */
+@media screen and (max-width: 992px){
+	.container{
+		width: 720px;
+	}
+	.wrapper{
+		flex-direction: column;
+	}
+	.offer{
+		width: auto;
+		padding: 0;
+	}
+	.btn{
+		margin: 0 auto;
+	}
+	.intro{
+		width: auto;
+		text-align: center;
+		margin-bottom: 50px; 
+	}
+	.travel{
+		display: block;
+    	width: 570px;
+   		margin: 72px auto 0;
+   		padding-bottom: 60px;
+	}
+	.title{
+		text-align: center;
+	}
+	.logo{
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 150px;
+		padding: 0;
+	}
+	.wrapper-2{
+		flex-direction: column;
+	}
+	.section-block{
+		width: auto;
+		margin-bottom: 30px;
+			}
+
+}
+
+/* 576 - 768 */
+@media screen and (max-width: 768px){
+	.container{
+		width: 540px;
+	}
+	.travel{
+		width: 100%;
+		height: 580px;
+	}
+	.input{
+		width: 90%;
+		padding-left: 15px;
+	}
+	.form button{
+		width: 94%;
+	}
+}
+
+/* 0 -576 */
+@media screen and (max-width: 576px){
+	.container{
+		width: 100%;
+	}
+	.form button{
+		width: 96%;
+	}
+	.travel{
+		width: 100%;
+		height: 300px;
+	}
+}
